@@ -5,6 +5,8 @@ public class GameController : MonoBehaviour {
 
 	private int numSelected = 0;
 
+	public Transform choice1; 
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("GAME CONTROLLER STARTED");
