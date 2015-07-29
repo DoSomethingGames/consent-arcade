@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour {
 
 	private int numSelected = 0;
 
-	public Transform choice1; 
+	public Transform[] choices;
 
 	// Use this for initialization
 	void Start () {
@@ -24,11 +24,14 @@ public class GameController : MonoBehaviour {
 	 *   The Ingredient selected on click
 	 */
 	public void OnIngredientClick (GameObject ingredient) {
-		Debug.Log("clicked");
-		numSelected++;
+		Debug.Log ("clicked");
 
 		Ingredient selected = ingredient.GetComponent<Ingredient>();
 
+		selected.transform.position = choices[numSelected].transform.position;
+
 		Debug.Log("Ingredient clicked. type: " + selected.type + ", num selected: " + numSelected);
+		numSelected++;
+		//if(numSelected > 3) move to next scene;
 	}
 }
