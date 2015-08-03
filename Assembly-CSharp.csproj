@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Pizza-Scene1\GameController.cs" />
      <Compile Include="Assets\Scripts\Pizza-Scene1\Ingredient.cs" />
+     <Compile Include="Assets\TimerController.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
