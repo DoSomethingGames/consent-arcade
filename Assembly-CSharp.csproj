@@ -46,9 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Pizza-Scene1\GameController.cs" />
-     <Compile Include="Assets\Scripts\Pizza-Scene1\Ingredient.cs" />
-     <Compile Include="Assets\TimerController.cs" />
+     <Compile Include="Assets\CanCant.cs" />
+     <Compile Include="Assets\GCScene4.cs" />
+     <Compile Include="Assets\Scripts\GCScene4.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\Ingredient.cs" />
+     <Compile Include="Assets\Scripts\Pizza-Scene1\GCScene1.cs" />
+     <Compile Include="Assets\Scripts\Pizza-Scene1\PizzaPrefs.cs" />
+     <Compile Include="Assets\Scripts\Pizza-Scene2\GCScene2.cs" />
+     <Compile Include="Assets\Scripts\Pizza-Scene3\GCScene3.cs" />
+     <Compile Include="Assets\Scripts\TimerController.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

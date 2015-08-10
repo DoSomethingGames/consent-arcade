@@ -1180,11 +1180,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22420420, guid: 74be8b4006b274a8c9af86fbd8181e86, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -224
+      value: -231
       objectReference: {fileID: 0}
     - target: {fileID: 22420420, guid: 74be8b4006b274a8c9af86fbd8181e86, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -134.5
+      value: -135
       objectReference: {fileID: 0}
     - target: {fileID: 22420420, guid: 74be8b4006b274a8c9af86fbd8181e86, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1113659685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d84a056b09cc9413394eef2b8d33b974, type: 3}
+  m_Script: {fileID: 11500000, guid: fb9ed65cf82dc474d9cea33f4041c3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1197125011}
@@ -1258,6 +1258,7 @@ MonoBehaviour:
   - {fileID: 199639418}
   - {fileID: 872343622}
   - {fileID: 120576829}
+  pizzaPrefs: {fileID: 1478365491}
 --- !u!4 &1113659687
 Transform:
   m_ObjectHideFlags: 0
@@ -1364,6 +1365,10 @@ Prefab:
     - target: {fileID: 11462796, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_Text
       value: Anchovies
+      objectReference: {fileID: 0}
+    - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnIngredientClick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 875261d4217f0481598bfa265566c105, type: 2}
@@ -1642,8 +1647,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1478365492}
+  - 114: {fileID: 1478365493}
   m_Layer: 0
-  m_Name: PlayerChoices
+  m_Name: PizzaPrefs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1661,6 +1667,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1478365493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1478365491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6d349786ff6454b9ff77329c01023b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIngredients:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  friendIngredients:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1713993006
 GameObject:
   m_ObjectHideFlags: 0

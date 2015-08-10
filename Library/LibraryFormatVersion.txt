@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-unityRebuildLibraryVersion: 10
-=======
 unityRebuildLibraryVersion: 11
->>>>>>> master
 unityForwardCompatibleVersion: 40
