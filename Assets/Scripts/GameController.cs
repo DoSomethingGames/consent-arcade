@@ -5,10 +5,13 @@ public class GameController : MonoBehaviour {
 
 	public GameObject timer;
 	protected string nextSceneString;
-	private TimerController timerController;
+	protected TimerController timerController;
+
+	public static Ingredient[] playerChoices;
+	public static Ingredient[] friendChoices;
 
 	// Use this for initialization
-	void Start () {
+	protected void Start () {
 		timerController = timer.GetComponent<TimerController> ();
 
 		if (timer) {

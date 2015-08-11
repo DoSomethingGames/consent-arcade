@@ -466,25 +466,13 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
-    - target: {fileID: 130964, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_Name
-      value: Bacon
-      objectReference: {fileID: 0}
     - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1113659686}
-    - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnIngredientClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 11462796, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_Text
+    - target: {fileID: 130964, guid: 875261d4217f0481598bfa265566c105, type: 2}
+      propertyPath: m_Name
       value: Bacon
-      objectReference: {fileID: 0}
-    - target: {fileID: 11485570, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: type
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 875261d4217f0481598bfa265566c105, type: 2}
@@ -616,8 +604,8 @@ Transform:
   - {fileID: 3337746}
   - {fileID: 60847224}
   - {fileID: 805440663}
-  - {fileID: 804340423}
   - {fileID: 1225347850}
+  - {fileID: 804340423}
   m_Father: {fileID: 1713993007}
   m_RootOrder: 1
 --- !u!224 &199639418 stripped
@@ -740,25 +728,13 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
-    - target: {fileID: 130964, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_Name
-      value: ExtraCheese
-      objectReference: {fileID: 0}
     - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1113659686}
-    - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnIngredientClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 11462796, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_Text
-      value: Extra Cheese
-      objectReference: {fileID: 0}
-    - target: {fileID: 11485570, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: type
-      value: 2
+    - target: {fileID: 130964, guid: 875261d4217f0481598bfa265566c105, type: 2}
+      propertyPath: m_Name
+      value: ExtraCheese
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 875261d4217f0481598bfa265566c105, type: 2}
@@ -805,7 +781,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404040, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 22404040, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1258,7 +1234,7 @@ MonoBehaviour:
   - {fileID: 199639418}
   - {fileID: 872343622}
   - {fileID: 120576829}
-  pizzaPrefs: {fileID: 1478365491}
+  pizzaPrefs: {fileID: 0}
 --- !u!4 &1113659687
 Transform:
   m_ObjectHideFlags: 0
@@ -1362,14 +1338,6 @@ Prefab:
       propertyPath: m_Name
       value: Anchovies
       objectReference: {fileID: 0}
-    - target: {fileID: 11462796, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_Text
-      value: Anchovies
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnIngredientClick
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 875261d4217f0481598bfa265566c105, type: 2}
   m_IsPrefabParent: 0
@@ -1410,7 +1378,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22404040, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 22404040, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1639,53 +1607,6 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
---- !u!1 &1478365491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1478365492}
-  - 114: {fileID: 1478365493}
-  m_Layer: 0
-  m_Name: PizzaPrefs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1478365492
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1478365491}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
---- !u!114 &1478365493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1478365491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a6d349786ff6454b9ff77329c01023b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerIngredients:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  friendIngredients:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1713993006
 GameObject:
   m_ObjectHideFlags: 0

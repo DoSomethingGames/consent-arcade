@@ -344,7 +344,7 @@ GameObject:
   - 114: {fileID: 907479425}
   - 114: {fileID: 907479427}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Result
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,6 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7f1bf624738461faa72e54fd98709c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  result: {fileID: 0}
 --- !u!1 &1056244883
 GameObject:
   m_ObjectHideFlags: 0

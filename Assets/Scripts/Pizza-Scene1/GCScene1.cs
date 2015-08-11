@@ -5,19 +5,8 @@ public class GCScene1 : GameController {
 	
 	private int numSelected = 0;
 
-	public Transform[] choices;
-	public GameObject pizzaPrefs;
+	public Ingredient[] choices;
 
-	void Awake() {
-		if (!pizzaPrefs) {
-			DontDestroyOnLoad (pizzaPrefs.transform);
-		} else {
-			Destroy(pizzaPrefs);
-		}
-
-		nextSceneString = "Pizza-Scene2";
-	}
-	
 	// Update is called once per frame
 	void Update () {}
 	
@@ -32,9 +21,17 @@ public class GCScene1 : GameController {
 		Ingredient selected = ingredient.GetComponent<Ingredient>();
 		
 		selected.transform.position = choices[numSelected].transform.position;
-		//pizzaPrefs.SetPlayerIngredient ();
 		numSelected++;
-		if(numSelected == 3) this.EndScene();
+
+		if (numSelected == 3) {
+			this.SetPlayerChoices(choices);
+			this.EndScene ();
+		}
 	}
 
+	private void SetPlayerChoices(Ingredient[] choices) {
+		if (choices.Length != playerChoices.Length) {
+			return;
+		}
+	}
 }

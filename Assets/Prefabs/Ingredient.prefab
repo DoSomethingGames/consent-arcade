@@ -82,7 +82,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: INGREDIENT
+  m_Text: Anchovies
 --- !u!114 &11467672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +146,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f747635de15bb4ba4af81a8f58d10c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
+  text: {fileID: 11462796}
+  image: {fileID: 11445746}
+  assets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  onPizzaAssets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  names:
+  - Anchovies
+  - Bacon
+  - Extra Cheese
+  - Mushroom
+  - Pepper
+  - Pepperoni
+  - Pineapple
+  - Sausage
 --- !u!222 &22204514
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -174,7 +203,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 45, y: 78}
+  m_AnchoredPosition: {x: 54, y: 82}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22442248
@@ -202,10 +231,62 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: names.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 3b23da8f5bbb44dbcae4546b7c517800,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[0]
+      value: Anchovies
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[1]
+      value: Bacon
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[2]
+      value: Extra Cheese
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[3]
+      value: Mushroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[4]
+      value: Pepper
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[5]
+      value: Pepperoni
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[6]
+      value: Pineapple
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: names.Array.data[7]
+      value: Sausage
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 11462796}
+    - target: {fileID: 0}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 11445746}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130964}

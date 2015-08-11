@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class CanCant : MonoBehaviour {
-	private Text result;
+	public Text result;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,13 @@ public class CanCant : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {}
 
-	public void setString(string str) {
-		result.text = str;
+	public bool isSuccessfulPizza(bool b) {
+		if (b) {
+			result.text = "CAN";
+		} else {
+			result.text = "CAN'T";
+		}
+
+		return b;
 	}
 }
