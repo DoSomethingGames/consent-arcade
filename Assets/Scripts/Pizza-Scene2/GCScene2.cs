@@ -28,7 +28,6 @@ public class GCScene2 : GameController {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
@@ -46,8 +45,11 @@ public class GCScene2 : GameController {
 			Text choiceText = choices[i].text;
 			choiceText.text = choices[i].GetText(randType);
 
-			Image choiceImage = choices[i].image;
+			Texture2D choiceImage = choices[i].GetComponent<Texture2D>();
 			choiceImage = choices[i].GetAsset(randType);
+			Debug.Log(choiceImage);
+
+			this.AddFriendChoice(choices[i]);
 		}
 	}
 }

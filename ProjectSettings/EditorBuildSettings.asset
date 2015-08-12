@@ -11,3 +11,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Pizza-Scene2.unity
   - enabled: 1
     path: Assets/Scenes/Pizza-Scene3.unity
+  - enabled: 1
+    path: Assets/Scenes/Pizza-Scene4.unity
+  - enabled: 1
+    path: Assets/Scenes/Fail-Scene.unity

@@ -17,15 +17,15 @@ public class Ingredient : MonoBehaviour {
 
 	public INGREDIENT_TYPE type;
 	public Text text;
-	public Image image;
+	public Texture2D image;
 
-	public Image[] assets;
-	public Image[] onPizzaAssets;
+	public Texture2D[] assets;
+	public Texture2D[] onPizzaAssets;
 	public string[] names;
 	
 	public const int LENGTH = 8;
 	
-	public Image GetAsset(INGREDIENT_TYPE ingredient) {
+	public Texture2D GetAsset(INGREDIENT_TYPE ingredient) {
 
 		switch (ingredient) {
 		case INGREDIENT_TYPE.ANCHOVIES:
@@ -50,7 +50,7 @@ public class Ingredient : MonoBehaviour {
 		}
 	}
 
-	public Image GetOnPizzaAsset(INGREDIENT_TYPE ingredient) {
+	public Texture2D GetOnPizzaAsset(INGREDIENT_TYPE ingredient) {
 		switch (ingredient) {
 		case INGREDIENT_TYPE.ANCHOVIES:
 			return onPizzaAssets[0];
@@ -75,7 +75,6 @@ public class Ingredient : MonoBehaviour {
 	}
 
 	public string GetText(INGREDIENT_TYPE ingredient) {
-		
 		switch (ingredient) {
 		case INGREDIENT_TYPE.ANCHOVIES:
 			return names[0];

@@ -5,11 +5,15 @@ public class GCScene1 : GameController {
 	
 	private int numSelected = 0;
 
-	public Ingredient[] choices;
+	public Transform[] choices;
+
+	void Awake() {
+		nextSceneString = "Pizza-Scene2";
+	}
 
 	// Update is called once per frame
 	void Update () {}
-	
+
 	/**
 	 * Function called when an ingredient is clicked.
 	 * 
@@ -19,19 +23,13 @@ public class GCScene1 : GameController {
 	public void OnIngredientClick (GameObject ingredient) {
 		
 		Ingredient selected = ingredient.GetComponent<Ingredient>();
-		
 		selected.transform.position = choices[numSelected].transform.position;
+		this.AddPlayerChoice (selected);
 		numSelected++;
 
 		if (numSelected == 3) {
-			this.SetPlayerChoices(choices);
-			this.EndScene ();
+			this.NextScene ();
 		}
 	}
 
-	private void SetPlayerChoices(Ingredient[] choices) {
-		if (choices.Length != playerChoices.Length) {
-			return;
-		}
-	}
 }

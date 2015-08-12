@@ -26,7 +26,7 @@ public class TimerController : MonoBehaviour {
 			transform.localScale -= new Vector3(percent, 0, 0);
 		} else if (countingDown) {
 			countingDown = false;
-			gameController.EndScene();
+			gameController.NextScene();
 		}
 	}
 

@@ -82,7 +82,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Anchovies
+  m_Text: INGREDIENT
 --- !u!114 &11467672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,13 +150,13 @@ MonoBehaviour:
   text: {fileID: 11462796}
   image: {fileID: 11445746}
   assets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 6fee2f3a0a4f0406398714f0490e5a1c, type: 3}
+  - {fileID: 2800000, guid: c2cfb27ee996a4ec782bdef9fd257446, type: 3}
+  - {fileID: 2800000, guid: 2d7e528d81f574c2a9d3b80730989856, type: 3}
+  - {fileID: 2800000, guid: afe292b9c07de4544b17fcc372cc4f18, type: 3}
+  - {fileID: 2800000, guid: 3c3f079d1d00f459b99c99c7d4322586, type: 3}
+  - {fileID: 2800000, guid: 3b72135f9e10d4e29b9cde63d4f3f0a9, type: 3}
+  - {fileID: 2800000, guid: 9ef305aca768c4c7e8e3ff452c6ff2e9, type: 3}
   - {fileID: 0}
   onPizzaAssets:
   - {fileID: 0}
@@ -203,7 +203,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 54, y: 82}
+  m_AnchoredPosition: {x: 359, y: 157}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22442248
@@ -287,6 +287,34 @@ Prefab:
       propertyPath: image
       value: 
       objectReference: {fileID: 11445746}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 6fee2f3a0a4f0406398714f0490e5a1c, type: 3}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: c2cfb27ee996a4ec782bdef9fd257446, type: 3}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 2d7e528d81f574c2a9d3b80730989856, type: 3}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: afe292b9c07de4544b17fcc372cc4f18, type: 3}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[4]
+      value: 
+      objectReference: {fileID: 2800000, guid: 3c3f079d1d00f459b99c99c7d4322586, type: 3}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[5]
+      value: 
+      objectReference: {fileID: 2800000, guid: 3b72135f9e10d4e29b9cde63d4f3f0a9, type: 3}
+    - target: {fileID: 0}
+      propertyPath: assets.Array.data[6]
+      value: 
+      objectReference: {fileID: 2800000, guid: 9ef305aca768c4c7e8e3ff452c6ff2e9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130964}

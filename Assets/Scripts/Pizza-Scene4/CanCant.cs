@@ -9,11 +9,11 @@ public class CanCant : MonoBehaviour {
 	void Start () {
 		result = GetComponent<Text>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {}
 
-	public bool isSuccessfulPizza(bool b) {
+	public bool IsSuccessfulPizza(bool b) {
 		if (b) {
 			result.text = "CAN";
 		} else {
