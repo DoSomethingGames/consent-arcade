@@ -4,11 +4,11 @@ using System.Collections;
 public class GCScene1 : GameController {
 	
 	private int numSelected = 0;
-
 	public Transform[] choices;
 
 	void Awake() {
 		nextSceneString = "Pizza-Scene2";
+		toFail = true;
 	}
 
 	// Update is called once per frame
@@ -24,12 +24,13 @@ public class GCScene1 : GameController {
 		
 		Ingredient selected = ingredient.GetComponent<Ingredient>();
 		selected.transform.position = choices[numSelected].transform.position;
-		this.AddPlayerChoice (selected);
+		Data.AddPlayerChoice (selected);
 		numSelected++;
+
+		selected.Disable ();
 
 		if (numSelected == 3) {
 			this.NextScene ();
 		}
 	}
-
 }

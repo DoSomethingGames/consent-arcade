@@ -10,9 +10,9 @@ public class Ingredient : MonoBehaviour {
 		EXTRA_CHEESE,
 		MUSHROOM,
 		PEPPER,
+		OLIVES,
 		PEPPERONI,
-		PINEAPPLE,
-		SAUSAGE
+		PINEAPPLE
 	};
 
 	public INGREDIENT_TYPE type;
@@ -22,6 +22,11 @@ public class Ingredient : MonoBehaviour {
 	public string[] names;
 	
 	public const int LENGTH = 8;
+
+	public void Set(Ingredient other) {
+		this.type = other.GetType();
+		//this.text.text = other.GetText(this.GetType ());
+	}
 	
 	public Sprite GetAsset(INGREDIENT_TYPE ingredient) {
 		switch (ingredient) {
@@ -33,13 +38,13 @@ public class Ingredient : MonoBehaviour {
 			return assets[2];
 		case INGREDIENT_TYPE.MUSHROOM:
 			return assets[3];
-		case INGREDIENT_TYPE.PEPPER:
+		case INGREDIENT_TYPE.OLIVES:
 			return assets[4];
-		case INGREDIENT_TYPE.PEPPERONI:
+		case INGREDIENT_TYPE.PEPPER:
 			return assets[5];
-		case INGREDIENT_TYPE.PINEAPPLE:
+		case INGREDIENT_TYPE.PEPPERONI:
 			return assets[6];
-		case INGREDIENT_TYPE.SAUSAGE:
+		case INGREDIENT_TYPE.PINEAPPLE:
 			return assets[7];
 		default:
 			Debug.Log("Could not find a matching ingredient type--asset not found");
@@ -57,13 +62,13 @@ public class Ingredient : MonoBehaviour {
 			return names[2];
 		case INGREDIENT_TYPE.MUSHROOM:
 			return names[3];
-		case INGREDIENT_TYPE.PEPPER:
+		case INGREDIENT_TYPE.OLIVES:
 			return names[4];
-		case INGREDIENT_TYPE.PEPPERONI:
+		case INGREDIENT_TYPE.PEPPER:
 			return names[5];
-		case INGREDIENT_TYPE.PINEAPPLE:
+		case INGREDIENT_TYPE.PEPPERONI:
 			return names[6];
-		case INGREDIENT_TYPE.SAUSAGE:
+		case INGREDIENT_TYPE.PINEAPPLE:
 			return names[7];
 		default:
 			Debug.Log("Could not find a matching ingredient type--text not found");
@@ -77,6 +82,10 @@ public class Ingredient : MonoBehaviour {
 
 	public INGREDIENT_TYPE GetType() {
 		return this.type;
+	}
+
+	public void Disable() {
+		this.GetComponent<Button>().interactable = false;
 	}
 
 	public static INGREDIENT_TYPE GetRandomType() {

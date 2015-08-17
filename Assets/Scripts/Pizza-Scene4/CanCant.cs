@@ -13,13 +13,11 @@ public class CanCant : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {}
 
-	public bool IsSuccessfulPizza(bool b) {
+	public void SetText(bool b) {
 		if (b) {
 			result.text = "CAN";
 		} else {
 			result.text = "CAN'T";
 		}
-
-		return b;
 	}
 }

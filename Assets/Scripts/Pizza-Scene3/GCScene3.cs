@@ -9,8 +9,6 @@ public class GCScene3 : GameController {
 
 	protected void Start () {
 		base.Start ();
-
-		answerChoices = new Ingredient[this.AmtInCommon ()];
 	}
 
 	// Update is called once per frame
@@ -18,15 +16,21 @@ public class GCScene3 : GameController {
 	
 	}
 
-	public int AmtInCommon() {
-		int count = 0;
-		for (int i = 0; i < playerChoices.Length; i++) {
-			for (int j = 0; j < friendChoices.Length; j++) {
-				if (playerChoices[i].GetType().Equals(friendChoices[j].GetType())) {
-					count++;
-				}
-			}
+	/**
+	 * Function called when an ingredient is clicked.
+	 * 
+	 * @param Object ingredient
+	 *   The Ingredient selected on click
+	 */
+	public void OnIngredientClick (GameObject ingredient) {
+		
+		Ingredient selected = ingredient.GetComponent<Ingredient> ();
+		Data.AddFinalChoice (selected);
+
+		selected.Disable ();
+		
+		if (Data.curFinalNum == 3) {
+			this.NextScene ();
 		}
-		return count;
 	}
 }

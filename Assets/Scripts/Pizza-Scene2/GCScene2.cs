@@ -8,18 +8,18 @@ public class GCScene2 : GameController {
 
 	void Awake() {
 		nextSceneString = "Pizza-Scene3";
+
+		this.populateChoices ();
 	}
 
 	protected void Start() {
 		base.Start ();
 
-		this.populateChoices ();
+		Data.SetAnswerChoices ();
 	}
 
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () {}
 
 	//returns true if something is in choices 
 	private bool IsInChoices(Ingredient.INGREDIENT_TYPE other) {
@@ -32,24 +32,31 @@ public class GCScene2 : GameController {
 	}
 
 	public void populateChoices() {
+
+		// place at least one ingredient from playerChoices into friendChoices
+		Ingredient.INGREDIENT_TYPE fromPlayer = Data.playerChoices [Random.Range (0, Data.playerChoices.Length)];
+		int rand = Random.Range (0, Data.playerChoices.Length);
+
 		for (int i = 0; i < choices.Length; i++) {
-			Ingredient.INGREDIENT_TYPE randType = Ingredient.GetRandomType();
+			if (i == rand && !this.IsInChoices(fromPlayer)) {
+				choices[i].SetType(fromPlayer);
+			} else {
+				Ingredient.INGREDIENT_TYPE randType = Ingredient.GetRandomType();
+				while (this.IsInChoices(randType)) {
+					randType = Ingredient.GetRandomType();
+				}
 
-			//prevents duplicate ingredients of the same type THERE MAY BE A BETTER SOLUTION
-			while (this.IsInChoices(randType)) {
-				randType = Ingredient.GetRandomType();
+				choices[i].SetType(randType);
 			}
-
-			choices[i].SetType(randType);
-
+			
 			Text choiceText = choices[i].text;
-			choiceText.text = choices[i].GetText(randType);
-
+			choiceText.text = choices[i].GetText(choices[i].GetType());
+			
 			Image choiceImage = choices[i].GetComponent<Image>();
-			choiceImage.sprite = choices[i].GetAsset(randType);
-			Debug.Log(choiceImage);
+			choiceImage.sprite = choices[i].GetAsset(choices[i].GetType());
 
-			this.AddFriendChoice(choices[i]);
+			Data.AddFriendChoice(choices[i]);
+			choices[i].Disable();
 		}
 	}
 }
