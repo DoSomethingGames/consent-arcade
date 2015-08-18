@@ -3,19 +3,21 @@ using System.Collections;
 
 public class GCScene4 : GameController {
 
-	public CanCant result;
-
-	void Start() {
-		result.SetText (Data.CompareChoices());
+	void Awake() {
+		nextSceneString = "Pizza-Scene1";
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Start () {
 	
 	}
 
-	void CompareChoices() {
+	public void OnPizzaClick(GameObject bar) {
+		SatisfactionController sc = bar.GetComponent<SatisfactionController> ();
+		sc.transform.localScale += sc.growthRate;
+		if (sc.transform.localScale.y >= 76) {
+			this.NextScene();
+		}
 	}
-
 
 }
