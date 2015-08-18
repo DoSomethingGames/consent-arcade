@@ -14,7 +14,7 @@ public class Data {
 	public static Ingredient.INGREDIENT_TYPE[] finalChoices = new Ingredient.INGREDIENT_TYPE[3];
 	public static int curFinalNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] answerChoices;
+	public static Ingredient.INGREDIENT_TYPE[] answerChoices = new Ingredient.INGREDIENT_TYPE[3];
 	public static int curAnswerNum = 0;
 
 	public static void AddPlayerChoice(Ingredient ingredient) {
@@ -62,18 +62,14 @@ public class Data {
 			return;
 		}
 
-		List<Ingredient.INGREDIENT_TYPE> list = new List<Ingredient.INGREDIENT_TYPE>();
-
 		for (int i = 0; i < Data.playerChoices.Length; i++) {
 			for (int j = 0; j < Data.friendChoices.Length; j++) {
 				if (Data.playerChoices[i] == Data.friendChoices[j]) {
 					Debug.Log("FOUND MATCH: " + playerChoices[i]);
-					list.Add(playerChoices[i]);
+					answerChoices[i] = playerChoices[i];
 				}
 			}
 		}
-		answerChoices = list.ToArray ();
-		Debug.Log ("LENGTH: " + answerChoices.Length);
 	}
 
 	public static bool IsInChoices(Ingredient.INGREDIENT_TYPE other) {
@@ -87,13 +83,10 @@ public class Data {
 
 	public static bool CompareChoices() {
 
-//		if (finalChoices.Length != answerChoices.Length)
-//			return false;
-
 		Array.Sort (finalChoices);
 		Array.Sort (answerChoices);
 
-		for (int i = 0; i < answerChoices.Length; i++) {
+		for (int i = 0; i > answerChoices.Length; i++) {
 			if (finalChoices[i] != answerChoices[i]) return false;
 			else Debug.Log(finalChoices[i]);
 		}

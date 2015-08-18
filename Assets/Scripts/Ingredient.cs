@@ -23,11 +23,6 @@ public class Ingredient : MonoBehaviour {
 	
 	public const int LENGTH = 8;
 
-	public void Set(Ingredient other) {
-		this.type = other.GetType();
-		//this.text.text = other.GetText(this.GetType ());
-	}
-	
 	public Sprite GetAsset(INGREDIENT_TYPE ingredient) {
 		switch (ingredient) {
 		case INGREDIENT_TYPE.ANCHOVIES:

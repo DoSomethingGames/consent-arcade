@@ -1,9 +1,5 @@
 Library/
 Temp/
-<<<<<<< HEAD
-Library/metadata
-Libary/ShaderCache
-=======
 Obj/
 Builds/
 
@@ -23,4 +19,3 @@ Builds/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
->>>>>>> a1b84eac0b72db75bb4fe063e2c4e95de63c29b1
