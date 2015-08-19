@@ -4,9 +4,11 @@ using System.Collections;
 public class GCScene3 : GameController {
 
 	public PizzaTopping[] toppings;
+	public int curToppingNum;
 
 	void Awake () {
 		nextSceneString = "Pizza-Scene4";
+		curToppingNum = 0;
 	}
 
 	protected void Start () {
@@ -14,9 +16,7 @@ public class GCScene3 : GameController {
 	}
 
 	// Update is called once per frame
-	void Update () {
-	
-	}
+	void Update () {}
 
 	/**
 	 * Function called when an ingredient is clicked.
@@ -29,6 +29,9 @@ public class GCScene3 : GameController {
 		Ingredient selected = ingredient.GetComponent<Ingredient> ();
 		Data.AddFinalChoice (selected);
 
+		toppings[curToppingNum].SetImage(selected.GetType());
+
+		curToppingNum++;
 		selected.Disable ();
 		
 		if (Data.curFinalNum == 3) {

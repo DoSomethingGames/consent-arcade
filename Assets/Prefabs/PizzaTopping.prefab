@@ -10,6 +10,7 @@ GameObject:
   - 224: {fileID: 22431986}
   - 222: {fileID: 22239498}
   - 114: {fileID: 11450906}
+  - 114: {fileID: 11422624}
   m_Layer: 5
   m_Name: PizzaTopping
   m_TagString: Untagged
@@ -17,6 +18,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &11422624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78566fe0596b14c29b1d78f8213da647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPizzaAssets:
+  - {fileID: 21300000, guid: d8b09e6046cb24e848729f9e88c16e57, type: 3}
+  - {fileID: 21300000, guid: 05960739c19ac4989a2878c7991f4eaf, type: 3}
+  - {fileID: 21300000, guid: db33490055db74083a72975ac0ab1917, type: 3}
+  - {fileID: 21300000, guid: 983c3438990cf4491869d7cc041711f4, type: 3}
+  - {fileID: 21300000, guid: 9e97b4e63462846ac8d910d3c753a41a, type: 3}
+  - {fileID: 21300000, guid: 7a93fb1593c85495ba11aa59589fb2df, type: 3}
+  - {fileID: 21300000, guid: a541d10f9632749a887d95ad0785891e, type: 3}
+  - {fileID: 21300000, guid: c9d4d42d84eca4cfdbc13d9f5a65131c, type: 3}
 --- !u!114 &11450906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .369639695, g: .184904814, b: .838235259, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 1
@@ -58,7 +79,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 5, y: -14}
+  m_AnchoredPosition: {x: 78, y: 16}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
@@ -69,7 +90,71 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AnchoredPosition.x
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d8b09e6046cb24e848729f9e88c16e57,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 05960739c19ac4989a2878c7991f4eaf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: db33490055db74083a72975ac0ab1917,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 983c3438990cf4491869d7cc041711f4,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e97b4e63462846ac8d910d3c753a41a,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a93fb1593c85495ba11aa59589fb2df,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: a541d10f9632749a887d95ad0785891e,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: c9d4d42d84eca4cfdbc13d9f5a65131c,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

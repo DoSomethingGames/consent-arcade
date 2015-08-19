@@ -361,6 +361,46 @@ Prefab:
       propertyPath: m_Transition
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d8b09e6046cb24e848729f9e88c16e57,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: db33490055db74083a72975ac0ab1917,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 05960739c19ac4989a2878c7991f4eaf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 983c3438990cf4491869d7cc041711f4,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e97b4e63462846ac8d910d3c753a41a,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a93fb1593c85495ba11aa59589fb2df,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: a541d10f9632749a887d95ad0785891e,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: onPizzaAssets.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: c9d4d42d84eca4cfdbc13d9f5a65131c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130964}
