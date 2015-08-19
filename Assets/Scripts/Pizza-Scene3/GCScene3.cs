@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GCScene3 : GameController {
 
+	public PizzaTopping[] toppings;
+
 	void Awake () {
 		nextSceneString = "Pizza-Scene4";
 	}
