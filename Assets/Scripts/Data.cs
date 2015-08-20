@@ -5,22 +5,29 @@ using System;
 
 public class Data {
 
-	public static Ingredient.INGREDIENT_TYPE[] playerChoices = new Ingredient.INGREDIENT_TYPE[3];
+	public static Ingredient.INGREDIENT_TYPE[] playerChoices;
 	public static int curPlayerNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] friendChoices = new Ingredient.INGREDIENT_TYPE[3];
+	public static Ingredient.INGREDIENT_TYPE[] friendChoices;
 	public static int curFriendNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] finalChoices = new Ingredient.INGREDIENT_TYPE[3];
+	public static Ingredient.INGREDIENT_TYPE[] finalChoices;
 	public static int curFinalNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] answerChoices = new Ingredient.INGREDIENT_TYPE[3];
+	public static Ingredient.INGREDIENT_TYPE[] answerChoices;
 	public static int curAnswerNum = 0;
 
 	public static void Reset() {
+		playerChoices = new Ingredient.INGREDIENT_TYPE[3];
 		curPlayerNum = 0;
+
+		friendChoices = new Ingredient.INGREDIENT_TYPE[3];
 		curFriendNum = 0;
+
+		finalChoices = new Ingredient.INGREDIENT_TYPE[3];
 		curFinalNum = 0;
+
+		answerChoices = new Ingredient.INGREDIENT_TYPE[3];
 		curAnswerNum = 0;
 	}
 
@@ -50,7 +57,7 @@ public class Data {
 			return;
 		}
 		finalChoices [curFinalNum] = ingredient.GetType();
-		Debug.Log (">>>>>>" + finalChoices[curFinalNum]);
+		Debug.Log (">>>>>>" + finalChoices[curFinalNum] + "to FinalChoices");
 		curFinalNum++;
 	}
 	
@@ -90,15 +97,26 @@ public class Data {
 
 	public static bool CompareChoices() {
 
+		Debug.Log ("BEFORE");
+		PrintArray (finalChoices);
+		PrintArray (answerChoices);
 		Array.Sort (finalChoices);
 		Array.Sort (answerChoices);
-
+		Debug.Log ("AFTER");
+		PrintArray (finalChoices);
+		PrintArray (answerChoices);
+		
 		for (int i = 0; i < answerChoices.Length; i++) {
 			Debug.Log("COMPARING " + finalChoices[i] + " TO " + answerChoices[i]);
 			if (finalChoices[i] != answerChoices[i]) return false;
-			else Debug.Log(finalChoices[i]);
 		}
 
 		return true;
+	}
+
+	private static void PrintArray(Ingredient.INGREDIENT_TYPE[] array) {
+		for (int i = 0; i < array.Length; i++) {
+			Debug.Log (array[i]);
+		}
 	}
 }
