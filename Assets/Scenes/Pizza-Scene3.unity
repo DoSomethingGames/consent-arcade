@@ -184,7 +184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485570, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: type
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11445746, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_Sprite
@@ -1651,6 +1651,10 @@ Prefab:
     - target: {fileID: 11467672, guid: 875261d4217f0481598bfa265566c105, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnIngredientClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485570, guid: 875261d4217f0481598bfa265566c105, type: 2}
+      propertyPath: type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 875261d4217f0481598bfa265566c105, type: 2}
