@@ -7,7 +7,7 @@ public class TimerController : MonoBehaviour {
 	private Transform timer;
 
 	private bool countingDown;
-	public const int START_TIME = 3;
+	public static int START_TIME = 5;
 	private float timeRemaining = START_TIME;
 
 	void Awake() {

@@ -12,9 +12,9 @@ public class GCScene2 : GameController {
 		this.populateChoices ();
 	}
 
+	//Start is called for initialization of object w/i the scene
 	protected void Start() {
 		base.Start ();
-
 		Data.SetAnswerChoices ();
 	}
 
