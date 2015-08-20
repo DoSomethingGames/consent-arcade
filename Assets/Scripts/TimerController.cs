@@ -7,7 +7,7 @@ public class TimerController : MonoBehaviour {
 	private Transform timer;
 
 	private bool countingDown;
-	private const int START_TIME = 3;
+	public const int START_TIME = 3;
 	private float timeRemaining = START_TIME;
 
 	void Awake() {
@@ -26,7 +26,12 @@ public class TimerController : MonoBehaviour {
 			transform.localScale -= new Vector3(percent, 0, 0);
 		} else if (countingDown) {
 			countingDown = false;
-			gameController.NextScene();
+			if (gameController.toFail) {
+				gameController.LoadFailScene();
+			} else {
+				gameController.LoadNextScene();
+			}
+
 		}
 	}
 

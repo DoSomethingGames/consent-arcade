@@ -5,14 +5,9 @@ public class GameController : MonoBehaviour {
 
 	public GameObject timer;
 	protected TimerController timerController;
-	protected bool toFail;
+	public bool toFail;
 
 	protected string nextSceneString;
-
-	void Awake() {
-
-		toFail = false;
-	}
 
 	// Use this for initialization
 	protected void Start () {
@@ -29,7 +24,11 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {}
 
-	public void NextScene () {
+	public void LoadNextScene () {
 		Application.LoadLevel(nextSceneString);
+	}
+
+	public void LoadFailScene() {
+		Application.LoadLevel ("Fail-Scene");
 	}
 }
