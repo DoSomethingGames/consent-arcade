@@ -410,10 +410,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 450, y: 400}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -478,11 +478,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22420420, guid: 74be8b4006b274a8c9af86fbd8181e86, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -231.799988
+      value: -225
       objectReference: {fileID: 0}
     - target: {fileID: 22420420, guid: 74be8b4006b274a8c9af86fbd8181e86, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -135.5
+      value: -140.580002
       objectReference: {fileID: 0}
     - target: {fileID: 22420420, guid: 74be8b4006b274a8c9af86fbd8181e86, type: 2}
       propertyPath: m_SizeDelta.x

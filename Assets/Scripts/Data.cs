@@ -94,7 +94,7 @@ public class Data {
 		Array.Sort (answerChoices);
 
 		for (int i = 0; i < answerChoices.Length; i++) {
-			//Debug.Log("COMPARING " + finalChoices[i] + " TO " + answerChoices[i]);
+			Debug.Log("COMPARING " + finalChoices[i] + " TO " + answerChoices[i]);
 			if (finalChoices[i] != answerChoices[i]) return false;
 			else Debug.Log(finalChoices[i]);
 		}
