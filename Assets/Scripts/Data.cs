@@ -17,6 +17,13 @@ public class Data {
 	public static Ingredient.INGREDIENT_TYPE[] answerChoices = new Ingredient.INGREDIENT_TYPE[3];
 	public static int curAnswerNum = 0;
 
+	public static void Reset() {
+		curPlayerNum = 0;
+		curFriendNum = 0;
+		curFinalNum = 0;
+		curAnswerNum = 0;
+	}
+
 	public static void AddPlayerChoice(Ingredient ingredient) {
 		if (curPlayerNum > playerChoices.Length) {
 			Debug.Log("OUT OF ARRAY");
