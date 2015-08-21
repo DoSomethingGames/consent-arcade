@@ -96,15 +96,6 @@ public class Data {
 	}
 
 	public static bool CompareChoices() {
-
-		Debug.Log ("BEFORE");
-		PrintArray (finalChoices);
-		PrintArray (answerChoices);
-		Array.Sort (finalChoices);
-		Array.Sort (answerChoices);
-		Debug.Log ("AFTER");
-		PrintArray (finalChoices);
-		PrintArray (answerChoices);
 		
 		for (int i = 0; i < answerChoices.Length; i++) {
 			Debug.Log("COMPARING " + finalChoices[i] + " TO " + answerChoices[i]);

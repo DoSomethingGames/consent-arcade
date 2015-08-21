@@ -36,4 +36,12 @@ public class GCScene1 : GameController {
 			this.LoadNextScene ();
 		}
 	}
+
+	public void LoadNextScene() {
+		if (numSelected < 3) {
+			this.LoadFailScene ();
+		} else {
+			Application.LoadLevel(nextSceneString);
+		}
+	}
 }
