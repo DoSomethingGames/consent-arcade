@@ -5,29 +5,29 @@ using System;
 
 public class Data {
 
-	public static Ingredient.INGREDIENT_TYPE[] playerChoices;
+	public static IngredientData.INGREDIENT_TYPE[] playerChoices;
 	public static int curPlayerNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] friendChoices;
+	public static IngredientData.INGREDIENT_TYPE[] friendChoices;
 	public static int curFriendNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] finalChoices;
+	public static IngredientData.INGREDIENT_TYPE[] finalChoices;
 	public static int curFinalNum = 0;
 	
-	public static Ingredient.INGREDIENT_TYPE[] answerChoices;
+	public static IngredientData.INGREDIENT_TYPE[] answerChoices;
 	public static int curAnswerNum = 0;
 
 	public static void Reset() {
-		playerChoices = new Ingredient.INGREDIENT_TYPE[3];
+		playerChoices = new IngredientData.INGREDIENT_TYPE[3];
 		curPlayerNum = 0;
 
-		friendChoices = new Ingredient.INGREDIENT_TYPE[3];
+		friendChoices = new IngredientData.INGREDIENT_TYPE[3];
 		curFriendNum = 0;
 
-		finalChoices = new Ingredient.INGREDIENT_TYPE[3];
+		finalChoices = new IngredientData.INGREDIENT_TYPE[3];
 		curFinalNum = 0;
 
-		answerChoices = new Ingredient.INGREDIENT_TYPE[3];
+		answerChoices = new IngredientData.INGREDIENT_TYPE[3];
 		curAnswerNum = 0;
 	}
 
@@ -86,7 +86,7 @@ public class Data {
 		}
 	}
 
-	public static bool IsInChoices(Ingredient.INGREDIENT_TYPE other) {
+	public static bool IsInChoices(IngredientData.INGREDIENT_TYPE other) {
 		for (int i = 0; i < answerChoices.Length; i++) {
 			if (other == answerChoices[i]) {
 				return true;
@@ -105,7 +105,7 @@ public class Data {
 		return true;
 	}
 
-	private static void PrintArray(Ingredient.INGREDIENT_TYPE[] array) {
+	private static void PrintArray(IngredientData.INGREDIENT_TYPE[] array) {
 		for (int i = 0; i < array.Length; i++) {
 			Debug.Log (array[i]);
 		}

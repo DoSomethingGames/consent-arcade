@@ -22,7 +22,7 @@ public class GCScene2 : GameController {
 	void Update () {}
 
 	//returns true if something is in choices 
-	private bool IsInChoices(Ingredient.INGREDIENT_TYPE other) {
+	private bool IsInChoices(IngredientData.INGREDIENT_TYPE other) {
 		for (int i = 0; i < choices.Length; i++) {
 			if (other == choices[i].GetType()) {
 				return true;
@@ -34,26 +34,26 @@ public class GCScene2 : GameController {
 	public void populateChoices() {
 
 		// place at least one ingredient from playerChoices into friendChoices
-		Ingredient.INGREDIENT_TYPE fromPlayer = Data.playerChoices [Random.Range (0, Data.playerChoices.Length)];
+		IngredientData.INGREDIENT_TYPE fromPlayer = Data.playerChoices [Random.Range (0, Data.playerChoices.Length)];
 		int rand = Random.Range (0, Data.playerChoices.Length);
 
 		for (int i = 0; i < choices.Length; i++) {
 			if (i == rand && !this.IsInChoices(fromPlayer)) {
 				choices[i].SetType(fromPlayer);
 			} else {
-				Ingredient.INGREDIENT_TYPE randType = Ingredient.GetRandomType();
+				IngredientData.INGREDIENT_TYPE randType = IngredientData.GetRandomType();
 				while (this.IsInChoices(randType)) {
-					randType = Ingredient.GetRandomType();
+					randType = IngredientData.GetRandomType();
 				}
 
 				choices[i].SetType(randType);
 			}
 			
 			Text choiceText = choices[i].text;
-			choiceText.text = choices[i].GetText(choices[i].GetType());
+			choiceText.text = IngredientData.GetText(choices[i].GetType());
 			
 			Image choiceImage = choices[i].GetComponent<Image>();
-			choiceImage.sprite = choices[i].GetAsset(choices[i].GetType());
+			choiceImage.sprite = IngredientData.GetAsset(choices[i].GetType());
 
 			Data.AddFriendChoice(choices[i]);
 			choices[i].Disable();

@@ -149,23 +149,14 @@ MonoBehaviour:
   type: 1
   text: {fileID: 11462796}
   assets:
-  - {fileID: 21300000, guid: 6fee2f3a0a4f0406398714f0490e5a1c, type: 3}
-  - {fileID: 21300000, guid: c2cfb27ee996a4ec782bdef9fd257446, type: 3}
-  - {fileID: 21300000, guid: 2d7e528d81f574c2a9d3b80730989856, type: 3}
-  - {fileID: 21300000, guid: afe292b9c07de4544b17fcc372cc4f18, type: 3}
-  - {fileID: 21300000, guid: 3ed5195a116bd4f1785d09ae2252038b, type: 3}
-  - {fileID: 21300000, guid: 3c3f079d1d00f459b99c99c7d4322586, type: 3}
-  - {fileID: 21300000, guid: 3b72135f9e10d4e29b9cde63d4f3f0a9, type: 3}
-  - {fileID: 21300000, guid: 9ef305aca768c4c7e8e3ff452c6ff2e9, type: 3}
-  names:
-  - Anchovies
-  - Bacon
-  - Extra Cheese
-  - Mushroom
-  - Olives
-  - Pepper
-  - Pepperoni
-  - Pineapple
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!222 &22204514
 CanvasRenderer:
   m_ObjectHideFlags: 1
